@@ -234,5 +234,16 @@
   <p>© 2026 Maple Foods International | All Rights Reserved</p>
 </footer>
 
+
+<!-- WhatsApp Order System Start -->
+<script>
+  function orderNow(productName) {
+    const phoneNumber = '923002083212'; // apna WhatsApp number yahan international format me
+    const message = `Hello, I want to order: ${productName}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
+</script>
+<!-- WhatsApp Order System End -->
 </body>
 </html>
